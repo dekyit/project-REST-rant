@@ -27,4 +27,10 @@ POST     |/places/:id/rant        |  Create a rant (comment) about a particular 
 DELETE   |/places/:id/rant/:rantId|  Delete a rant (comment) about a particular place
 GET      |            *           |  404 page (matches any route not defined above)
 
-
+------------------------------------------------------------------------------
+Places data:
+1. "name"
+2. "city"
+3. "state"
+4. "cuisines"
+5. "picture"
