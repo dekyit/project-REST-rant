@@ -43,3 +43,20 @@ main{
   margin-left: 20px;
   background-color: white;
 }
+
+h2{
+  text-align:justify;
+  margin-top: 8%;
+  margin-right: 20%;
+  color: cornflowerblue;
+}
+
+p{
+  text-align:justify ;
+}
+
+img.PadThaiDish{
+  height: 300px;
+  width: 200px;
+  margin-top: 10%;
+}
