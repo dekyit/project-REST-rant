@@ -12,7 +12,27 @@ REST-Rant is an app where users can
     cocktail/dive bars
     waterside
     fine dining
-    
+
+# DEMO
+
+![Home Page](public/images/Home.png)
+![Add a new Place](public/images/Add.png)
+
+
+## Tech Stack
+
+### Frontend
+
+- **Framework:** React.js
+- **Styling:** CSS-in-JS with Styled Components
+- **Routing:** React Router
+
+### Backend
+
+- **Framework:** Express.js
+- **Database:** MongoDB
+
+ ### API
 ----------------------------------------------------------------------------
 Method   |      Path              | Purpose
 GET      |            /           |  Home Page
@@ -28,9 +48,12 @@ DELETE   |/places/:id/rant/:rantId|  Delete a rant (comment) about a particular 
 GET      |            *           |  404 page (matches any route not defined above)
 
 ------------------------------------------------------------------------------
-Places data:
-1. "name"
-2. "city"
-3. "state"
-4. "cuisines"
-5. "picture"
+### App (http://localhost:3000)
+| Path                  | Component                 | Purpose                                                                         |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------------- |
+| /                     | `Home.js`                 | Home page                                                                       |
+| /sign-up              | `users/SignUpForm.js`     | Form for creating a new user                                                    |
+| /places               | `places/PlaceIndex.js`    | List of places                                                                  |
+| /places/new           | `places/NewPlaceForm.js`  | Form for creating a new place                                                   |
+| /places/:placeId      | `places/PlaceDetails.js`  | Details of a place, including it's comments, and a form to create a new comment |
+| /places/:placeId/edit | `places/EditPlaceForm.js` | Form for editing a place                                                        |
